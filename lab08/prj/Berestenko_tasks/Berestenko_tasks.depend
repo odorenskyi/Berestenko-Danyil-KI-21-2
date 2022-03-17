@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1645900408 source:c:\users\daniq\onedrive\Робочий стіл\bmtp-lab8-berestenko\prj\berestenko_tasks\berestenko_tasks\main.cpp
+	<iostream>
+	<cmath>
+	<iomanip>
+	<conio.h>
+	"Modules-berestenko.h"
+
+1645637796 c:\users\daniq\onedrive\Робочий стіл\bmtp-lab8-berestenko\prj\berestenko_tasks\berestenko_tasks\modules-berestenko.h
+
