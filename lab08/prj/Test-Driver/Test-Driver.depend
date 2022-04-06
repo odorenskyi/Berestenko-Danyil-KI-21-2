@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1647523168 source:c:\users\daniq\onedrive\Робочий стіл\bmtp-lab8-berestenko\prj\testdriver\test-driver\main.cpp
-	<iostream>
-	<cmath>
-	"ModulesBerestenko.h"
-
-1645635873 c:\users\daniq\onedrive\Робочий стіл\bmtp-lab8-berestenko\prj\testdriver\test-driver\modulesberestenko.h
-
