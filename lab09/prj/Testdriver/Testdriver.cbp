@@ -44,6 +44,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="../../../lab08/prj/ModulesBerestenko/Modules-berestenko.h" />
+		<Unit filename="../../ModulesBerestenko/main.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
