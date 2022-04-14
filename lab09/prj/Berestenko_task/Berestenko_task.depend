@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1649887529 source:c:\berestenko-danyil-ki-21-2\lab09\prj\modulesberestenko\main.cpp
+	<cmath>
+
+1649924345 source:c:\users\daniq\onedrive\Робочий стіл\berestenko-danyil-ki-21-2\lab09\prj\berestenko_task\main.cpp
+	<iostream>
+	<conio.h>
+	"Modules-berestenko.h"
+
