@@ -13,14 +13,16 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="../../ModulesBerestenko" />
+					<Add directory="../ModulesBerestenko" />
 				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../ModulesBerestenko" />
+				</ResourceCompiler>
 				<Linker>
 					<Add option="-static-libstdc++" />
 					<Add option="-static-libgcc" />
 					<Add option="-static" />
-					<Add library="../../ModulesBerestenko/bin/Debug/libModules-berestenko.a" />
-					<Add directory="C:/Users/daniq/OneDrive/Робочий стіл/Berestenko-Danyil-KI-21-2/lab09/prj/Berestenko_task/Berestenko_task/" />
+					<Add library="../ModulesBerestenko/bin/Debug/libModules-berestenko.a" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -40,8 +42,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="../../ModulesBerestenko/main.cpp" />
-		<Unit filename="../Modules-berestenko.h" />
+		<Unit filename="../ModulesBerestenko/Modules-berestenko.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
