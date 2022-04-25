@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1649883353 source:c:\users\daniq\onedrive\Робочий стіл\berestenko-danyil-ki-21-2\lab09\prj\testdriver\main.cpp
+	<iostream>
+	"Modules-berestenko.h"
+
+1649166672 c:\users\daniq\onedrive\Робочий стіл\berestenko-danyil-ki-21-2\lab08\prj\modulesberestenko\modules-berestenko.h
+
+1649166091 source:c:\users\daniq\onedrive\Робочий стіл\berestenko-danyil-ki-21-2\lab09\modulesberestenko\main.cpp
+	<cmath>
+
