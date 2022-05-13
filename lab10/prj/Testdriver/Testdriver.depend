@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1652420031 source:c:\users\daniq\onedrive\Робочий стіл\berestenko-danyil-ki-21-2\lab10\prj\testdriver\main.cpp
+1652420084 source:c:\users\daniq\onedrive\Робочий стіл\berestenko-danyil-ki-21-2\lab10\prj\testdriver\main.cpp
 	<iostream>
 	<cstring>
 	<conio.h>
