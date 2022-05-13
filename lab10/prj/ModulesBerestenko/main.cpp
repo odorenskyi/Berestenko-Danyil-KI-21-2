@@ -3,6 +3,7 @@
 #include <ctime>
 #include <cstring>
 #include <bitset>
+#include <string>
 
 
 using namespace std;
@@ -14,13 +15,14 @@ float s_calculation(float x, float y, float z){
     return 0.5*((pow(y,2)+ 2*z)/sqrt(7*pi + x)) - sqrt(pow(e,abs(x))+ (sqrt(abs(y-z)))/sin(z*y));
 }
 
-void inputFileTxt(string inputFilename, string sentence){
+string inputFileTxt(string inputFilename, string sentence){
     ofstream inputFile(inputFilename);
     inputFile << sentence << endl << endl;
     inputFile.close();
+    return sentence;
 }
 
-void authorInfo(string outputFileName)
+bool authorInfo(string outputFileName)
 {
     ofstream outputFile(outputFileName);
 	outputFile << "====================================================================" << endl
@@ -36,69 +38,64 @@ string language(string outputFileName, string text)
 {
     bool isEnglish = false;
     string w_search = text;
-    ofstream outputFile(outputFileName, ios::in);
-    if(outputFile.is_open()){
+    ofstream outputFile(outputFileName, ios::app);
+    if(outputFile.is_open() == false) {
+        return text;
+    }
+
+    for(int i = 0; i < text.length(); i++){
+        if((text[i] >= 'A' && text[i] <= 'Z') || (text[i] >= 'a' && text[i] <= 'z')){
+            isEnglish = true;
+            break;
+        }
+        else if((text[i] >= 'А' && text[i] <= 'Я') || (text[i] >= 'а' && text[i] <= 'я')){
+            isEnglish = false;
+            break;
+        }
+    }
+
+    outputFile << "Мова: " << ((isEnglish == true) ? "Англійська\n" : "Україньска\n");
+
+    if(isEnglish == true){
+        for(int i =0; i < text.length(); i++){
+            if(text[i] >= 'a' && text[i] <= 'z')
+                w_search[i] = text[i] - 32;
+            else
+                w_search[i] = text[i];
+        }
+    }
+    else {
         for(int i = 0; i < text.length(); i++){
-            if((text[i] >= 'A' && text[i] <= 'Z') || (text[i] >= 'a' && text[i] <= 'z')){
-                isEnglish = true;
-                break;
+            if((text[i] == 'л') && (text[i+1] == 'і') && (text[i+2] == 'н') &&
+               (text[i+3] == 'о') && (text[i+4] == 'щ') && (text[i+5] == 'і'))
+            {
+                for(int j = 0; j < 6; j++)
+                    w_search[i+j] = ' ';
             }
-            else if((text[i] >= 'А' && text[i] <= 'Я') || (text[i] >= 'а' && text[i] <= 'я')){
-                isEnglish = false;
-                break;
+            if((text[i] == 'с') && (text[i+1] == 'е') && (text[i+2] == 'с') &&
+               (text[i+3] == 'і') && (text[i+4] == 'я'))
+            {
+                for(int j = 0; j < 5; j++)
+                    w_search[i+j] = ' ';
             }
-        }
-    }
-    outputFile.close();
-    outputFile.open(outputFileName, ios::app);
-    if(outputFile.is_open()){
-        outputFile << text << endl;
-        outputFile << "Мова: " << ((isEnglish == true) ? "Англійська\n" : "Україньска\n");
-    }
-    outputFile.open(outputFileName, ios::in);
-    if(outputFile.is_open()){
-       if(isEnglish == true){
-            for(int i =0; i < text.length(); i++){
-                if(text[i] >= 'a' && text[i] <= 'z')
-                    w_search[i] = text[i] - 32;
-                else
-                    w_search[i] = text[i];
-            }
-        }
-        else{
-            for(int i = 0; i < text.length(); i++){
-                if((text[i] == 'л') && (text[i+1] == 'і') && (text[i+2] == 'н') &&
-                   (text[i+3] == 'о') && (text[i+4] == 'щ') && (text[i+5] == 'і'))
-                {
-                    for(int j = 0; j < 6; j++)
-                        w_search[i+j] = ' ';
-                }
-                if((text[i] == 'с') && (text[i+1] == 'е') && (text[i+2] == 'с') &&
-                   (text[i+3] == 'і') && (text[i+4] == 'я'))
-                {
-                    for(int j = 0; j < 5; j++)
-                        w_search[i+j] = ' ';
-                }
-                if((text[i] == 'а') && (text[i+1] == 'к') && (text[i+2] == 'а') && (text[i+3] == 'д') &&
-                   (text[i+4] == 'е') && (text[i+5] == 'м') && (text[i+6] == 'з') && (text[i+7] == 'а') &&
-                   (text[i+8] == 'б') && (text[i+9] == 'о') && (text[i+10] == 'р') && (text[i+11] == 'г') &&
-                   (text[i+12] == 'о') && (text[i+13] == 'в') && (text[i+14] == 'а') && (text[i+15] == 'н') &&
-                   (text[i+16] == 'і') && (text[i+17] == 'с') && (text[i+18] == 'т') && (text[i+19] == 'ь'))
-                {
-                    for(int j = 0; j < 20; j++)
-                        w_search[i+j] = ' ';
-                }
+            if((text[i] == 'а') && (text[i+1] == 'к') && (text[i+2] == 'а') && (text[i+3] == 'д') &&
+               (text[i+4] == 'е') && (text[i+5] == 'м') && (text[i+6] == 'з') && (text[i+7] == 'а') &&
+               (text[i+8] == 'б') && (text[i+9] == 'о') && (text[i+10] == 'р') && (text[i+11] == 'г') &&
+               (text[i+12] == 'о') && (text[i+13] == 'в') && (text[i+14] == 'а') && (text[i+15] == 'н') &&
+               (text[i+16] == 'і') && (text[i+17] == 'с') && (text[i+18] == 'т') && (text[i+19] == 'ь'))
+            {
+                for(int j = 0; j < 20; j++)
+                    w_search[i+j] = ' ';
             }
         }
     }
+
+    outputFile << w_search << endl;
     outputFile.close();
-    outputFile.open(outputFileName, ios::app);
-    if(outputFile.is_open())
-        outputFile << w_search << endl;
-    outputFile.close();
+    return w_search;
 }
 
-string article_62(string inputFileText){
+bool article_62(string inputFileText){
     string article_62;
     ofstream inputfile(inputFileText,ios::app);
     if(inputfile.is_open()){
@@ -146,21 +143,25 @@ string article_62(string inputFileText){
         time_t t;
         t = time(NULL);
         inputfile << ctime(&t);
+        inputfile.close();
+        return true;
     }
+    return false;
 }
 
-double sCalculationInFile(string outputFileName, float x, float y, float z)
+float sCalculationInFile(string outputFileName, float x, float y, float z)
 {
-    ofstream outputFile("outputFile.txt", ios::app);
+    ofstream outputFile(outputFileName,ios::app);
     outputFile << "Результат виконання функції s_calculation: " << s_calculation(x,y,z) << endl;
     outputFile.close();
     return s_calculation(x,y,z);
 }
 
-void numberBinFile(string outputFileName, int b)
+string numberBinFile(string outputFileName, int b)
 {
     ofstream outputFile(outputFileName, ios::app);
     bitset<32> b_number(b);
     outputFile << "Число " << b << " у двійковому коді: " << b_number << endl;
     outputFile.close();
+    return b_number.to_string();
 }

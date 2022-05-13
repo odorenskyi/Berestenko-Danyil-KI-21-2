@@ -16,6 +16,7 @@
 				<Compiler>
 					<Add option="-Wall" />
 					<Add option="-g" />
+					<Add option="-finput-charset=utf-8 -fexec-charset=cp1251" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
