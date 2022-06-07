@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1654466464 source:c:\users\daniq\onedrive\Робочий стіл\berestenko-danyil-ki-21-2\lab11\modules_berestenko\main.cpp
+	<iostream>
+	<fstream>
+	"struct_type_project_5.h"
+	<vector>
+
+1654463685 c:\users\daniq\onedrive\Робочий стіл\berestenko-danyil-ki-21-2\lab11\modules_berestenko\struct_type_project_5.h
+	<iostream>
+	<fstream>
+	<wchar.h>
+	<fcntl.h>
+	<clocale>
+	<windows.h>
+	<codecvt>
+
