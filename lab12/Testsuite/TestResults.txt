@@ -1,0 +1,104 @@
+----------------------------------------------------
+| TEST CASE  1                                     |
+| (input)    Piramid height:                15 ì   |
+| (input)    Piramid side length:            6 ì   |
+| (output)   Piramid volume:         77.942286 ì^2 |
+| (expected) Piramid volume:         77.942286 ì^2 |
+| TEST CASE RESULT:                       true     |
+----------------------------------------------------
+----------------------------------------------------
+| TEST CASE  2                                     |
+| (input)    Piramid height:                 5 ì   |
+| (input)    Piramid side length:           20 ì   |
+| (output)   Piramid volume:        288.675135 ì^2 |
+| (expected) Piramid volume:        288.675135 ì^2 |
+| TEST CASE RESULT:                       true     |
+----------------------------------------------------
+----------------------------------------------------
+| TEST CASE  3                                     |
+| (input)    Piramid height:                10 ì   |
+| (input)    Piramid side length:            8 ì   |
+| (output)   Piramid volume:         92.376043 ì^2 |
+| (expected) Piramid volume:         92.376043 ì^2 |
+| TEST CASE RESULT:                       true     |
+----------------------------------------------------
+----------------------------------------------------
+| TEST CASE  4                                     |
+| (input)    Piramid height:                10 ì   |
+| (input)    Piramid side length:            4 ì   |
+| (output)   Piramid volume:         23.094011 ì^2 |
+| (expected) Piramid volume:         23.094011 ì^2 |
+| TEST CASE RESULT:                       true     |
+----------------------------------------------------
+----------------------------------------------------
+| TEST CASE  5                                     |
+| (input)    Piramid height:                14 ì   |
+| (input)    Piramid side length:            7 ì   |
+| (output)   Piramid volume:         99.015571 ì^2 |
+| (expected) Piramid volume:         99.015571 ì^2 |
+| TEST CASE RESULT:                       true     |
+----------------------------------------------------
+----------------------------------------------------
+| TEST CASE  6                                     |
+| (input)    Piramid height:                11 ì   |
+| (input)    Piramid side length:            2 ì   |
+| (output)   Piramid volume:          6.350853 ì^2 |
+| (expected) Piramid volume:          6.350853 ì^2 |
+| TEST CASE RESULT:                       true     |
+----------------------------------------------------
+----------------------------------------------------
+| TEST CASE  7                                     |
+| (input)    Piramid height:                12 ì   |
+| (input)    Piramid side length:            5 ì   |
+| (output)   Piramid volume:         43.301270 ì^2 |
+| (expected) Piramid volume:         43.301270 ì^2 |
+| TEST CASE RESULT:                       true     |
+----------------------------------------------------
+----------------------------------------------------
+| TEST CASE  8                                     |
+| (input)    Piramid height:                12 ì   |
+| (input)    Piramid side length:           10 ì   |
+| (output)   Piramid volume:        173.205081 ì^2 |
+| (expected) Piramid volume:        173.205081 ì^2 |
+| TEST CASE RESULT:                       true     |
+----------------------------------------------------
+----------------------------------------------------
+| TEST CASE  9                                     |
+| (input)    Piramid height:                18 ì   |
+| (input)    Piramid side length:           11 ì   |
+| (output)   Piramid volume:        314.367222 ì^2 |
+| (expected) Piramid volume:        314.367222 ì^2 |
+| TEST CASE RESULT:                       true     |
+----------------------------------------------------
+----------------------------------------------------
+| TEST CASE 10                                     |
+| (input)    Piramid height:                21 ì   |
+| (input)    Piramid side length:           14 ì   |
+| (output)   Piramid volume:        594.093427 ì^2 |
+| (expected) Piramid volume:        594.093427 ì^2 |
+| TEST CASE RESULT:                       true     |
+----------------------------------------------------
+----------------------------------------------------
+| TEST CASE 11                                     |
+| (input)    Piramid height:                22 ì   |
+| (input)    Piramid side length:           16 ì   |
+| (output)   Piramid volume:        812.909179 ì^2 |
+| (expected) Piramid volume:        812.909179 ì^2 |
+| TEST CASE RESULT:                       true     |
+----------------------------------------------------
+----------------------------------------------------
+| TEST CASE 12                                     |
+| (input)    Piramid height:                10 ì   |
+| (input)    Piramid side length:           15 ì   |
+| (output)   Piramid volume:        324.759526 ì^2 |
+| (expected) Piramid volume:        324.759526 ì^2 |
+| TEST CASE RESULT:                       true     |
+----------------------------------------------------
+----------------------------------------------------
+| TEST CASE 13                                     |
+| (input)    Piramid height:                17 ì   |
+| (input)    Piramid side length:           21 ì   |
+| (output)   Piramid volume:       1082.098742 ì^2 |
+| (expected) Piramid volume:       1082.098742 ì^2 |
+| TEST CASE RESULT:                       true     |
+----------------------------------------------------
