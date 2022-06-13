@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1654852860 source:c:\users\daniq\onedrive\Робочий стіл\berestenko-danyil-ki-21-2\lab12\prj\teacher\main.cpp
+	"AditionFunc.h"
+
+1654851522 c:\users\daniq\onedrive\Робочий стіл\berestenko-danyil-ki-21-2\lab12\prj\teacher\aditionfunc.h
+	"Modules_Berestenko.h"
+	<iostream>
+	<fstream>
+	<iomanip>
+
+1654813196 c:\users\daniq\onedrive\Робочий стіл\berestenko-danyil-ki-21-2\lab12\prj\teacher\modules_berestenko.h
+	<cmath>
+
